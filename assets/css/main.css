@@ -13,6 +13,20 @@
    Base Styles and Bootstrap Modifications
    ========================================================================== */
 
+/*embed prime font*/
+@font-face {
+    font-family: 'primeregular';
+    src: url('../fonts/prime_regular-webfont.eot');
+    src: url('../fonts/prime_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/prime_regular-webfont.woff2') format('woff2'),
+         url('../fonts/prime_regular-webfont.woff') format('woff'),
+         url('../fonts/prime_regular-webfont.ttf') format('truetype'),
+         url('../fonts/prime_regular-webfont.svg#primeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 html,
 button,
 input,
@@ -132,6 +146,9 @@ border: 0px solid transparent;
 	color: white;
 }
 
+      #navbar-main{
+        visibility: hidden;
+      }
 
 
 hr {
@@ -277,7 +294,7 @@ a:after {
 	text-align:center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 650px;
+	min-height: 550px;
 	width: 100%;
 	
     -webkit-background-size: 100%;
@@ -299,17 +316,38 @@ a:after {
 	font-size: 100px;
 	font-weight: bold;
 	text-shadow: 2px 2px 2px #000;
+
 }
 
 #headerwrap p {
 	color:#ffffff;
-	font-size: 40px;
-	font-weight: 400;
+	font-size: 30px;
+	font-weight: 500;
 	text-align: center;
 	line-height: 40px;
 	letter-spacing: 3px;
 	margin-left: 15px;
-	text-shadow: 1px 1px 1px #000;
+	/*text-shadow: 1px 1px 1px #000;*/
+    font-family: 'primeregular', Arial, sans-serif;
+    line-height: .6;
+    text-transform: uppercase;
+
+}
+#headerwrap h2 {
+    color:#ffffff;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'primeregular', Arial, sans-serif;
+    line-height: .6;
+    text-transform: uppercase;
+}
+#headerwrap h3 {
+    color:#ffffff;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'primeregular', Arial, sans-serif;
+    line-height: .6;
+    text-transform: uppercase;
 }
 
 #greywrap {
@@ -336,6 +374,29 @@ a:after {
 	font-size: 60px;
 	line-height: 30px;
 	margin-bottom: 10px;
+}
+
+#about{
+    margin-bottom: 55px
+    }
+
+#about p {
+    line-height: 1.1;
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 13px;
+}
+
+#the_data {
+    background-color:rgba(135, 170, 202, 0.38)
+    }
+
+#the_data ul{
+    list-style: none;
+}
+
+#mod_traff_issues{
+    margin-top: 0px;
 }
 
 #footerwrap {
@@ -633,5 +694,10 @@ a:after {
 		font-size: 30px;
 		line-height: 38px;
 	}
+
 }
 
+@media (min-width: 768px) {
+        #navbar-main{
+    visibility: visible;
+}
