@@ -288,7 +288,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../img/bg/red_sky_bg.jpg) no-repeat center top;
+	background: url(../img/bg/cover1grey.png) no-repeat center top;
 	margin-top: -50px;
 	padding-top:120px;
 	text-align:center;
@@ -475,10 +475,10 @@ a:after {
 	background-image: url('../img/bg/road_bg.jpg')
 }
 
-.divider2 {
-	background-image: url('../img/bg/new rueview concept .jpg');
+/*.divider2 {
+	background-image: url('../img/bg/concept.png');
     height: 100%;
-}
+}*/
 
 .divider3 {
 	background-image: url('../img/bg/divider3.jpg');
@@ -490,7 +490,7 @@ a:after {
 }
 
 .divider6 {
-	background-image: url('../img/bg/11143898424_7be560d2e4_b.jpg')
+	background-image: url('../img/bg/backg2.png')
 }
 
 
